@@ -22,7 +22,7 @@ const experiences = [
     location: "Poughkeepsie, NY",
     period: "Jun. 2025 - Present",
     description: [
-      "Developed a secure ingestion and normalization pipeline that converts raw Excel/CSV/10-K/10-Q filings into structured canonical JSON using Fastify, S3/Netlify Blobs, pandas, and pdfplumber.",
+      "Developed a secure ingestion and normalization pipeline that converts raw Excel/CSV/10-K/10-Q filings into structured canonical JSON using Fastify, Pandas, and pdfplumber.",
       "Developed the analytics and insights layer that computes financial KPIs (DuPont, liquidity, solvency, profitability, YoY/QoQ) and powers an OpenAI-based chatbot for real-time analysis, increasing user insight discovery by 3x.",
     ],
   },
