@@ -29,7 +29,7 @@ export default function ResumePage() {
         {/* PDF Viewer */}
         <div className="bg-card rounded-lg p-6 shadow-lg">
           <iframe
-            src="/resume/Tony_Nguyen_Resume1.pdf"
+            src="/resume/Tony_Nguyen_Resume.pdf"
             className="w-full h-[600px] md:h-[800px] border-0 rounded"
             title="Tony Nguyen Resume"
           />
