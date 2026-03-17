@@ -17,7 +17,7 @@ export default function ResumePage() {
             View or download my latest resume
           </p>
           <a
-            href="/resume/Tony_Nguyen_Resume1.pdf"
+            href="/resume/Tony_Nguyen_Resume.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center justify-center px-6 py-3 bg-primary text-primary-foreground hover:bg-primary/90 transition-colors rounded-lg font-medium"
