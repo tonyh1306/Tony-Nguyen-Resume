@@ -25,7 +25,7 @@ const projects = [
 
 export function Projects() {
   return (
-    <section id="projects" className="pt-16 pb-24 px-6 md:px-12 lg:px-24 relative z-20">
+    <section id="projects" className="py-24 px-6 md:px-12 lg:px-24 relative z-20">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <span className="text-primary font-mono text-sm tracking-wider">03.</span>

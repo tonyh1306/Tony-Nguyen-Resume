@@ -85,7 +85,7 @@ export function Experience() {
   const [activeTab, setActiveTab] = useState(0)
 
   return (
-    <section id="experience" className="py-24 pb-16 px-6 md:px-12 lg:px-24 relative z-20">
+    <section id="experience" className="py-24 px-6 md:px-12 lg:px-24 relative z-20">
       <div className="max-w-5xl mx-auto">
         <div className="flex items-center gap-4 mb-12">
           <span className="text-primary font-mono text-sm tracking-wider">02.</span>
