@@ -69,6 +69,16 @@ const experiences = [
       "Introduced digital sign-ups and post-event surveys to track attendance and feedback, improving attendance consistency by 35% and raising post-event satisfaction scores to 70%.",
     ],
   },
+  {
+    company: "Vassar College",
+    shortName: "Earth Science RA",
+    title: "Earth Science Research Assistant",
+    location: "Poughkeepsie, NY",
+    period: "Jan. 2026 - Present",
+    description: [
+      "Assists Professor Deon Knights to create binary mask of river deltas using different products with unique spatial resolution through Python, NumPy, Pandas, obtaining Landsat, Sentinel and Planet images to test the role of satellite resolution on resolving small river delta channels.",
+    ],
+  },
 ]
 
 export function Experience() {
