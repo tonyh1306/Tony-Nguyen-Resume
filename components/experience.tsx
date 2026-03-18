@@ -95,7 +95,7 @@ export function Experience() {
 
         <div className="flex flex-col md:flex-row gap-8">
           {/* Tabs */}
-          <div className="flex md:flex-col overflow-x-auto md:overflow-visible md:min-w-[200px]">
+          <div className="flex md:flex-col flex-wrap md:overflow-visible md:min-w-[200px]">
             {experiences.map((exp, index) => (
               <button
                 key={`${exp.company}-${exp.title}`}
@@ -116,7 +116,7 @@ export function Experience() {
           {/* Content */}
           <div className="py-2 md:py-0 min-h-[300px]">
             <h4 className="text-xl md:text-2xl font-semibold text-white">
-              {experiences[activeTab].title}
+              {experiences[activeTab].title}=
             </h4>
             <p className="text-white font-serif text-lg mt-1">
               @ {experiences[activeTab].company}
