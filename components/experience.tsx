@@ -101,7 +101,7 @@ export function Experience() {
                 key={`${exp.company}-${exp.title}`}
                 onClick={() => setActiveTab(index)}
                 className={cn(
-                  "px-4 py-3 text-sm font-mono text-left whitespace-nowrap transition-all",
+                  "px-5 py-3.5 text-base font-mono text-left whitespace-nowrap transition-all",
                   "border-b-2 md:border-b-0 md:border-l-2",
                   activeTab === index
                     ? "text-primary border-primary bg-primary/5"
