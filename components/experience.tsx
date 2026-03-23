@@ -116,7 +116,7 @@ export function Experience() {
           {/* Content */}
           <div className="py-2 md:py-0 min-h-[300px]">
             <h4 className="text-xl md:text-2xl font-semibold text-white">
-              {experiences[activeTab].title}=
+              {experiences[activeTab].title}
             </h4>
             <p className="text-white font-serif text-lg mt-1">
               @ {experiences[activeTab].company}
