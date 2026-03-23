@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, type MouseEvent } from "react"
 import { Menu, X } from "lucide-react"
 import { cn } from "@/lib/utils"
 
@@ -14,6 +14,36 @@ const navItems = [
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+
+  const scrollToSection =
+    (href: string, options?: { closeMobileMenu?: boolean }) =>
+    (event: MouseEvent<HTMLAnchorElement>) => {
+    if (!href.startsWith("#")) {
+      return
+    }
+
+    event.preventDefault()
+
+    if (href === "#") {
+      window.history.pushState(null, "", window.location.pathname)
+      window.scrollTo({ top: 0, behavior: "smooth" })
+      if (options?.closeMobileMenu) {
+        setIsMobileMenuOpen(false)
+      }
+      return
+    }
+
+    const target = document.querySelector(href)
+    if (!target) {
+      return
+    }
+
+    window.history.pushState(null, "", href)
+    target.scrollIntoView({ behavior: "smooth", block: "start" })
+    if (options?.closeMobileMenu) {
+      setIsMobileMenuOpen(false)
+    }
+  }
 
   useEffect(() => {
     const handleScroll = () => {
@@ -36,6 +66,7 @@ export function Navigation() {
         {/* Logo */}
         <a
           href="#"
+          onClick={scrollToSection("#")}
           className="px-4 py-2 bg-foreground/10 backdrop-blur-sm rounded-full border border-border hover:border-primary transition-colors"
         >
           <span className="font-serif text-lg font-bold text-white">Tony Nguyen</span>
@@ -47,6 +78,7 @@ export function Navigation() {
             <li key={item.label}>
               <a
                 href={item.href}
+                onClick={scrollToSection(item.href)}
                 className="text-lg md:text-xl text-gray-300 hover:text-primary transition-colors font-mono"
               >
                 {item.label}
@@ -81,7 +113,7 @@ export function Navigation() {
               <li key={item.label}>
                 <a
                   href={item.href}
-                  onClick={() => setIsMobileMenuOpen(false)}
+                  onClick={scrollToSection(item.href, { closeMobileMenu: true })}
                   className="text-3xl md:text-4xl font-serif text-white hover:text-primary transition-colors"
                 >
                   {item.label}
