@@ -25,17 +25,13 @@ export default function ResumePage() {
             📄 Download PDF
           </a>
         </div>
-
-        {/* PDF Viewer */}
         <div className="bg-card rounded-lg p-6 shadow-lg">
           <iframe
             src="/resume/Tony_Nguyen_Resume.pdf"
             className="w-full h-[600px] md:h-[800px] border-0 rounded"
             title="Tony Nguyen Resume"
           />
-          
-          {/* Fallback for browsers that can't display PDFs */}
-          <div className="text-center py-12 mt-4 border-t border-border">
+            <div className="text-center py-12 mt-4 border-t border-border">
             <p className="text-gray-300 mb-4">
               If the PDF doesn't load above, download it directly.
             </p>
