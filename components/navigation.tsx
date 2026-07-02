@@ -8,6 +8,9 @@ const navItems = [
   { label: "About", href: "#about" },
   { label: "Experience", href: "#experience" },
   { label: "Projects", href: "#projects" },
+  { label: "Open Source", href: "#open-source" },
+  { label: "Research", href: "#research" },
+  { label: "Writing", href: "#blog" },
   { label: "Contact", href: "#contact" },
 ]
 
@@ -61,7 +64,7 @@ export function Navigation() {
   }, [isMobileMenuOpen])
 
   return (
-    <header
+     <header
       className={cn(
         "fixed top-0 left-0 right-0 z-50",
         !isMobileMenuOpen && "transition-all duration-300",

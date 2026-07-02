@@ -17,7 +17,7 @@ export function ScrollingMarquee({
     fast: "animate-[marquee_15s_linear_infinite]",
   }
 
-  const directionStyle = direction === "right" ? "animation-direction: reverse" : ""
+  const directionStyle = direction === "right" ? "animationDirection: reverse" : ""
 
   return (
     <div className="w-full overflow-hidden bg-primary/10 border-y border-primary/20 py-4">

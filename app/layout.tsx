@@ -1,20 +1,20 @@
 import type { Metadata } from 'next'
-import { Playfair_Display, Inter } from 'next/font/google'
+import { Lora, DM_Sans } from 'next/font/google'
 import { Analytics } from '@vercel/analytics/next'
 import './globals.css'
 
-const playfair = Playfair_Display({ 
+const lora = Lora({
   subsets: ["latin"],
   variable: '--font-serif'
 });
-const inter = Inter({ 
+const dmSans = DM_Sans({
   subsets: ["latin"],
   variable: '--font-sans'
 });
 
 export const metadata: Metadata = {
-  title: 'Tony Nguyen | Full-Stack Developer',
-  description: 'Tony Nguyen - Full-Stack Software Developer passionate about building accessible, pixel-perfect digital experiences',
+  title: 'Tony Nguyen | Systems & AI',
+  description: 'CS rising junior at Vassar College and Cornell Tech Break Through Tech ML/AI Fellow. Building distributed AI evaluation platforms, conducting AI safety research, and shipping production backend systems.',
   generator: 'v0.app',
   icons: {
     icon: [
@@ -42,7 +42,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={`${playfair.variable} ${inter.variable} font-sans antialiased`}>
+      <body className={`${lora.variable} ${dmSans.variable} font-sans antialiased`}>
         {children}
         <Analytics />
       </body>

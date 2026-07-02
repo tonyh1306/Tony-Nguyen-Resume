@@ -3,6 +3,9 @@ import { Hero } from "@/components/hero"
 import { About } from "@/components/about"
 import { Experience } from "@/components/experience"
 import { Projects } from "@/components/projects"
+import { OpenSource } from "@/components/open-source"
+import { Research } from "@/components/research"
+import { Blog } from "@/components/blog"
 import { Contact } from "@/components/contact"
 import { Footer } from "@/components/footer"
 import { ParallaxOcean } from "@/components/parallax-ocean"
@@ -10,13 +13,13 @@ import { FloatingStars } from "@/components/floating-stars"
 import { ScrollingMarquee } from "@/components/scrolling-marquee"
 
 const marqueeItems = [
-  "SOFTWARE ENGINEER",
+  "SYSTEMS ENGINEER",
+  "AI SAFETY RESEARCH",
+  "LLM EVALUATION",
+  "DISTRIBUTED SYSTEMS",
+  "ML/AI FELLOW",
+  "OPEN SOURCE",
   "VASSAR COLLEGE",
-  "REACT",
-  "NODE.JS",
-  "JAVASCRIPT",
-  "PYTHON",
-  "JAVA",
 ]
 
 export default function Home() {
@@ -30,7 +33,10 @@ export default function Home() {
       <About />
       <Experience />
       <Projects />
-      <ScrollingMarquee items={["APPLE PIE", "VANILLA ICE CREAM", "INNOVATE", "CREATE"]} direction="right" />
+      <OpenSource />
+      <Research />
+      {/* <Blog /> */}
+      <ScrollingMarquee items={["BUILD", "EVALUATE", "RESEARCH", "ALIGN", "SHIP"]} direction="right" />
       <Contact />
       <Footer />
     </main>
