@@ -14,12 +14,12 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Aevol: Agent Evaluation Platform",
-    subtitle: "Distributed AI Evaluation Platform",
+    title: "Aevol: LLM-as-Judge Evaluation SDK",
+    subtitle: "Universal Agent Trace Evaluation Platform",
     description:
-      "Engineered a distributed AI evaluation platform with a Redis-backed priority queue using Lua atomic task claiming to prevent double-execution across horizontally scaled worker pools, with heartbeat monitoring, dead worker detection, and automatic re-queueing for fault tolerance. Built a pluggable evaluator system supporting exact match, embedding similarity, LLM-as-judge, and agent trace evaluation, with TF-IDF + KMeans failure clustering and a live SSE dashboard streaming real-time task progress.",
-    impact: "Lua atomic task claiming · fault-tolerant workers · LLM-as-judge + agent trace eval",
-    tech: ["FastAPI", "Redis", "PostgreSQL", "Python asyncio", "Docker", "Next.js"],
+      "Built a universal LLM-as-judge evaluation SDK for multi-agent applications, with a tree-structured trace schema (Trace/Span) that maps onto any agent framework — LangGraph, CrewAI, AutoGen, or raw API calls — evaluating tool calls, handoffs, chain-of-thought, and final answers. Traces are scored against user-defined weighted rubrics by a Redis-backed distributed worker pool (BRPOP atomic claiming), with results streamed live to a Next.js dashboard via SSE. Supports Anthropic and OpenAI as judge providers.",
+    impact: "framework-agnostic trace schema · rubric-weighted scoring · Redis BRPOP workers · SSE live progress",
+    tech: ["Python", "FastAPI", "Redis", "PostgreSQL", "Pydantic v2", "Next.js", "Docker"],
     github: "https://github.com/tonyh1306/aevol",
   },
   {
