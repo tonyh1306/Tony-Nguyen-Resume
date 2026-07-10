@@ -40,6 +40,16 @@ const projects: Project[] = [
     tech: ["Python", "PyTorch", "timm", "EfficientNet-B4", "FaceForensics++", "scikit-learn"],
     github: "https://github.com/tonyh1306/dfd",
   },
+  {
+    title: "Depression Prediction from NHANES Survey Data",
+    subtitle: "End-to-End Statistical ML Analysis & Published Report",
+    description:
+      "Modeled depression scores from NHANES 2017–2018 survey data (demographics, income, sleep, work, and health variables) using linear and LASSO regression, gradient boosting (regression and classification), and neural network baselines, with SHAP analysis for feature-level interpretation. Published the full analysis as an interactive Quarto report site, including an honest evaluation showing broad demographic/lifestyle features alone lack individual-level predictive power.",
+    impact: "NHANES 2017–18 pipeline · LASSO + gradient boosting + SHAP · rigorous negative-result reporting",
+    tech: ["Python", "R", "scikit-learn", "Gradient Boosting", "SHAP", "Quarto"],
+    github: "https://github.com/tonyh1306/Depression-Prediction-Website-Aiden-J-Brown-Tony-Nguyen",
+    live: "https://aidenjbrown.github.io/depression-prediction-website/",
+  },
 ]
 
 export function Projects() {

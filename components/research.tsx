@@ -8,8 +8,8 @@ const interests = [
   },
   {
     icon: Globe,
-    title: "Multilingual Robustness & Global South AI",
-    body: "Competing in AI safety hackathons focused on multilingual fairness and building systems that work equitably across languages and cultural contexts beyond English-language defaults.",
+    title: "Global South AI",
+    body: "Competing in AI safety hackathons focused on safety alignment of AI models finetuned according to 4 proposed safety categories ",
   },
   {
     icon: Satellite,
