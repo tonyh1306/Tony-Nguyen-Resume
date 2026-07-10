@@ -92,7 +92,7 @@ export function Navigation() {
               <a
                 href={item.href}
                 onClick={scrollToSection(item.href)}
-                className="text-lg md:text-xl text-gray-300 hover:text-primary transition-colors font-mono"
+                className="text-lg md:text-xl text-gray-100 hover:text-primary transition-colors font-mono"
               >
                 {item.label}
               </a>

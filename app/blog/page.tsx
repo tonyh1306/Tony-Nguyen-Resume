@@ -15,20 +15,20 @@ export default function BlogPage() {
       <div className="max-w-3xl mx-auto">
         <Link
           href="/"
-          className="inline-flex items-center gap-2 text-sm font-mono text-gray-400 hover:text-primary transition-colors mb-12"
+          className="inline-flex items-center gap-2 text-sm font-mono text-gray-200 hover:text-primary transition-colors mb-12"
         >
           <ArrowLeft className="w-4 h-4" />
           Back home
         </Link>
 
         <h1 className="font-serif text-5xl md:text-6xl font-bold text-white mb-4">Writing</h1>
-        <p className="text-gray-400 text-lg mb-16 leading-relaxed">
+        <p className="text-gray-200 text-lg mb-16 leading-relaxed">
           Notes on AI safety research, systems engineering, and things I&apos;m figuring out.
         </p>
 
         {posts.length === 0 ? (
           <div className="rounded-xl border border-border bg-card/50 p-10 text-center">
-            <p className="text-gray-400 font-mono text-sm">
+            <p className="text-gray-200 font-mono text-sm">
               No posts yet. Drop a <code className="text-primary">.md</code> file in{" "}
               <code className="text-primary">content/blog/</code> to publish.
             </p>
@@ -45,11 +45,11 @@ export default function BlogPage() {
                   <h2 className="font-serif text-xl text-white group-hover:text-primary transition-colors mb-2 leading-snug">
                     {post.title}
                   </h2>
-                  <p className="text-gray-400 text-sm leading-relaxed line-clamp-2 mb-3">
+                  <p className="text-gray-200 text-sm leading-relaxed line-clamp-2 mb-3">
                     {post.excerpt}
                   </p>
                   <div className="flex flex-wrap items-center gap-3">
-                    <span className="flex items-center gap-1.5 text-xs font-mono text-gray-500">
+                    <span className="flex items-center gap-1.5 text-xs font-mono text-gray-300">
                       <Calendar className="w-3 h-3" />
                       {new Date(post.date).toLocaleDateString("en-US", {
                         year: "numeric",
@@ -69,7 +69,7 @@ export default function BlogPage() {
                     ))}
                   </div>
                 </div>
-                <ArrowRight className="w-5 h-5 text-gray-500 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0 hidden sm:block" />
+                <ArrowRight className="w-5 h-5 text-gray-300 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0 hidden sm:block" />
               </Link>
             ))}
           </div>

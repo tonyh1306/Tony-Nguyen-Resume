@@ -51,7 +51,7 @@ export function OpenSource() {
           <span className="h-px flex-1 bg-border max-w-xs" />
         </div>
 
-        <p className="text-gray-300 text-lg max-w-2xl leading-relaxed mb-12">
+        <p className="text-gray-100 text-lg max-w-2xl leading-relaxed mb-12">
           I contribute to open-source cognitive science tooling &mdash; building
           experiment plugins and research pipelines that make published psychology
           findings reproducible and extensible. Here&apos;s where I focus and what I&apos;ve shipped.
@@ -66,7 +66,7 @@ export function OpenSource() {
             >
               <Icon className="w-6 h-6 text-primary mb-4" />
               <h3 className="font-serif text-xl text-white mb-2">{title}</h3>
-              <p className="text-gray-300 text-sm leading-relaxed">{body}</p>
+              <p className="text-gray-100 text-sm leading-relaxed">{body}</p>
             </div>
           ))}
         </div>
@@ -91,7 +91,7 @@ export function OpenSource() {
                   {c.project}
                 </span>
                 <span className="flex-1">
-                  <span className="text-gray-300 text-sm leading-relaxed block mb-3">
+                  <span className="text-gray-100 text-sm leading-relaxed block mb-3">
                     {c.summary}
                   </span>
                   <span className="flex flex-wrap gap-2">

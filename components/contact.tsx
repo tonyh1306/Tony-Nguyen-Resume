@@ -10,7 +10,7 @@ export function Contact() {
           that <span className="italic text-primary">thinks</span>.
         </h2>
 
-        <p className="text-gray-300 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
+        <p className="text-gray-100 text-lg mb-10 leading-relaxed max-w-xl mx-auto">
           Right now I&apos;m building Aevol into a full AI evaluation platform, conducting AI agentic research, and applying ML skills from my Break Through Tech fellowship to real industry problems. I&apos;m actively looking for summer engineering and research roles where systems depth meets applied AI &mdash; my inbox is open.
         </p>
 

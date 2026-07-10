@@ -10,7 +10,7 @@ export function Footer() {
             href="https://github.com/tonyh1306"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-primary transition-colors"
+            className="text-gray-100 hover:text-primary transition-colors"
             aria-label="GitHub"
           >
             <Github className="w-5 h-5" />
@@ -19,21 +19,21 @@ export function Footer() {
             href="https://linkedin.com/in/tungqnguyen"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-gray-300 hover:text-primary transition-colors"
+            className="text-gray-100 hover:text-primary transition-colors"
             aria-label="LinkedIn"
           >
             <Linkedin className="w-5 h-5" />
           </Link>
           <Link
             href="mailto:tqnguyen@vassar.edu"
-            className="text-gray-300 hover:text-primary transition-colors"
+            className="text-gray-100 hover:text-primary transition-colors"
             aria-label="Email"
           >
             <Mail className="w-5 h-5" />
           </Link>
         </div>
 
-        <p className="text-sm text-gray-300 font-mono">
+        <p className="text-sm text-gray-100 font-mono">
           Designed & Built by{" "}
           <span className="text-primary">Tony Nguyen</span>
         </p>

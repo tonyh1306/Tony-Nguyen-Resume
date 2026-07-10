@@ -55,7 +55,7 @@ export function Research() {
                 Binary classification of real vs. synthesized faces via transfer
                 learning
               </p>
-              <p className="text-gray-300 leading-relaxed text-sm">
+              <p className="text-gray-100 leading-relaxed text-sm">
                 Transfer learning on FaceForensics++ using a frozen
                 EfficientNet-B4 backbone with a fine-tuned classification head.
                 Frame extraction pipeline samples C23-compressed videos across
@@ -81,7 +81,7 @@ export function Research() {
               <p className="text-white font-serif italic mb-4">
                 Research Assistant · advised by Prof. Deon Knights
               </p>
-              <p className="text-gray-300 leading-relaxed text-sm">
+              <p className="text-gray-100 leading-relaxed text-sm">
                 Building a Python pipeline (NumPy, Pandas) that generates binary
                 masks of river deltas from Landsat, Sentinel, and Planet imagery
                 to quantify how satellite spatial resolution affects detection
@@ -103,7 +103,7 @@ export function Research() {
             >
               <Icon className="w-6 h-6 text-primary mb-4" />
               <h4 className="font-serif text-xl text-white mb-2">{title}</h4>
-              <p className="text-gray-300 text-sm leading-relaxed">{body}</p>
+              <p className="text-gray-100 text-sm leading-relaxed">{body}</p>
             </div>
           ))}
         </div>

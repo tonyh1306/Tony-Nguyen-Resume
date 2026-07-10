@@ -118,7 +118,7 @@ export function Experience() {
                   "border-b-2 md:border-b-0 md:border-l-2",
                   activeTab === index
                     ? "text-primary border-primary bg-primary/5"
-                    : "text-gray-300 border-border hover:text-white hover:bg-muted/30 hover:border-secondary"
+                    : "text-gray-100 border-border hover:text-white hover:bg-muted/30 hover:border-secondary"
                 )}
               >
                 {exp.shortName}
@@ -134,14 +134,14 @@ export function Experience() {
             <p className="text-white font-serif text-lg mt-1">
               @ {experiences[activeTab].company}
             </p>
-            <p className="text-xl font-mono text-gray-300 mt-2 mb-6">
+            <p className="text-xl font-mono text-gray-100 mt-2 mb-6">
               {experiences[activeTab].period} | {experiences[activeTab].location}
             </p>
             <ul className="space-y-4">
               {experiences[activeTab].description.map((item, index) => (
                 <li
                   key={index}
-                  className="flex gap-3 text-gray-300 leading-relaxed"
+                  className="flex gap-3 text-gray-100 leading-relaxed"
                 >
                   <span className="text-primary mt-1 flex-shrink-0">*</span>
                   <span>{item}</span>

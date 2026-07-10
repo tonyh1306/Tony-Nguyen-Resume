@@ -81,7 +81,7 @@ export function Projects() {
                     href={project.github}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-gray-300 hover:text-primary transition-colors"
+                    className="text-gray-100 hover:text-primary transition-colors"
                     aria-label={`View ${project.title} on GitHub`}
                   >
                     <Github className="w-5 h-5" />
@@ -91,7 +91,7 @@ export function Projects() {
                       href={project.live}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="text-gray-300 hover:text-primary transition-colors"
+                      className="text-gray-100 hover:text-primary transition-colors"
                       aria-label={`View ${project.title} live`}
                     >
                       <ExternalLink className="w-5 h-5" />
@@ -105,7 +105,7 @@ export function Projects() {
               </h4>
               <p className="text-white font-serif italic mb-4">{project.subtitle}</p>
 
-              <p className="text-gray-300 mb-4 leading-relaxed text-sm">
+              <p className="text-gray-100 mb-4 leading-relaxed text-sm">
                 {project.description}
               </p>
 

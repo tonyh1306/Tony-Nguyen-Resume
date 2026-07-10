@@ -22,7 +22,7 @@ export function About() {
         </div>
 
         <div className="grid md:grid-cols-5 gap-12">
-          <div className="md:col-span-3 space-y-6 text-gray-300 leading-relaxed">
+          <div className="md:col-span-3 space-y-6 text-gray-100 leading-relaxed">
             <p className="text-lg">
               I&apos;m a rising junior CS student at <span className="text-primary font-medium">Vassar College</span> and a <span className="text-primary font-medium">Cornell Tech Break Through Tech ML/AI Fellow</span>. My work lives at the boundary between research and engineering.
             </p>
@@ -38,7 +38,7 @@ export function About() {
               {stats.map((stat) => (
                 <div key={stat.label} className="text-center md:text-left">
                   <div className="font-serif text-3xl md:text-4xl font-bold text-primary">{stat.value}</div>
-                  <div className="text-xs font-mono text-gray-400 tracking-wider uppercase mt-1">{stat.label}</div>
+                  <div className="text-xs font-mono text-gray-200 tracking-wider uppercase mt-1">{stat.label}</div>
                 </div>
               ))}
             </div>
@@ -46,7 +46,7 @@ export function About() {
             {/* Awards */}
             <div className="mt-8 p-4 border border-border rounded-lg bg-card/50">
               <h4 className="text-white font-mono text-sm mb-3 tracking-wider">AWARDS</h4>
-              <ul className="space-y-2 text-sm text-gray-300">
+              <ul className="space-y-2 text-sm text-gray-100">
                 <li className="flex items-start gap-2">
                   <span className="text-primary mt-0.5">*</span>
                   <span>Cornell Tech Break Through Tech ML/AI Fellow</span>
@@ -77,7 +77,7 @@ export function About() {
                     {items.map((skill) => (
                       <span
                         key={skill}
-                        className="text-xs px-3 py-1.5 bg-muted text-muted-foreground rounded-full border border-border hover:border-primary hover:text-primary transition-colors"
+                        className="text-xs px-3 py-1.5 bg-muted text-gray-200 rounded-full border border-border hover:border-primary hover:text-primary transition-colors"
                       >
                         {skill}
                       </span>

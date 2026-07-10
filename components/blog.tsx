@@ -14,13 +14,13 @@ export function Blog() {
           <span className="h-px flex-1 bg-border max-w-xs" />
         </div>
 
-        <p className="text-gray-300 text-lg max-w-2xl leading-relaxed mb-12">
+        <p className="text-gray-100 text-lg max-w-2xl leading-relaxed mb-12">
           Notes on AI safety research, systems engineering, and things I&apos;m figuring out.
         </p>
 
         {posts.length === 0 ? (
           <div className="rounded-xl border border-border bg-card/50 p-10 text-center">
-            <p className="text-gray-400 font-mono text-sm">No posts yet. Drop a <code className="text-primary">.md</code> file in <code className="text-primary">content/blog/</code> to publish.</p>
+            <p className="text-gray-200 font-mono text-sm">No posts yet. Drop a <code className="text-primary">.md</code> file in <code className="text-primary">content/blog/</code> to publish.</p>
           </div>
         ) : (
           <div className="space-y-4">
@@ -34,11 +34,11 @@ export function Blog() {
                   <h3 className="font-serif text-xl text-white group-hover:text-primary transition-colors mb-2 leading-snug">
                     {post.title}
                   </h3>
-                  <p className="text-gray-400 text-sm leading-relaxed line-clamp-2 mb-3">
+                  <p className="text-gray-200 text-sm leading-relaxed line-clamp-2 mb-3">
                     {post.excerpt}
                   </p>
                   <div className="flex flex-wrap items-center gap-3">
-                    <span className="flex items-center gap-1.5 text-xs font-mono text-gray-500">
+                    <span className="flex items-center gap-1.5 text-xs font-mono text-gray-300">
                       <Calendar className="w-3 h-3" />
                       {new Date(post.date).toLocaleDateString("en-US", {
                         year: "numeric",
@@ -58,7 +58,7 @@ export function Blog() {
                     ))}
                   </div>
                 </div>
-                <ArrowRight className="w-5 h-5 text-gray-500 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0 hidden sm:block" />
+                <ArrowRight className="w-5 h-5 text-gray-300 group-hover:text-primary group-hover:translate-x-1 transition-all flex-shrink-0 hidden sm:block" />
               </Link>
             ))}
           </div>

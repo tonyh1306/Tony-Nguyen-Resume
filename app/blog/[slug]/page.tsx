@@ -32,7 +32,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
       <div className="max-w-2xl mx-auto">
         <Link
           href="/blog"
-          className="inline-flex items-center gap-2 text-sm font-mono text-gray-400 hover:text-primary transition-colors mb-12"
+          className="inline-flex items-center gap-2 text-sm font-mono text-gray-200 hover:text-primary transition-colors mb-12"
         >
           <ArrowLeft className="w-4 h-4" />
           All posts
@@ -43,7 +43,7 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
             {post.title}
           </h1>
           <div className="flex flex-wrap items-center gap-4">
-            <span className="flex items-center gap-1.5 text-sm font-mono text-gray-500">
+            <span className="flex items-center gap-1.5 text-sm font-mono text-gray-300">
               <Calendar className="w-3.5 h-3.5" />
               {new Date(post.date).toLocaleDateString("en-US", {
                 year: "numeric",
@@ -67,13 +67,13 @@ export default async function PostPage({ params }: { params: Promise<{ slug: str
         <article
           className="prose prose-invert prose-lg max-w-none
             prose-headings:font-serif prose-headings:text-white
-            prose-p:text-gray-300 prose-p:leading-relaxed
+            prose-p:text-gray-100 prose-p:leading-relaxed
             prose-a:text-primary prose-a:no-underline hover:prose-a:underline
             prose-strong:text-white
             prose-code:text-primary prose-code:bg-primary/10 prose-code:px-1.5 prose-code:py-0.5 prose-code:rounded prose-code:text-sm prose-code:before:content-none prose-code:after:content-none
             prose-pre:bg-card prose-pre:border prose-pre:border-border
-            prose-blockquote:border-primary prose-blockquote:text-gray-400
-            prose-li:text-gray-300
+            prose-blockquote:border-primary prose-blockquote:text-gray-200
+            prose-li:text-gray-100
             prose-hr:border-border"
           dangerouslySetInnerHTML={{ __html: post.contentHtml }}
         />
