@@ -14,13 +14,13 @@ type Project = {
 
 const projects: Project[] = [
   {
-    title: "Aevol: LLM-as-Judge Evaluation SDK",
-    subtitle: "Universal Agent Trace Evaluation Platform",
+    title: "Instagent: Multi-Agent Task-Execution Society",
+    subtitle: "Qwen Cloud-Native Orchestrator with Contract-Net Bidding & Council Arbitration",
     description:
-      "Built a universal LLM-as-judge evaluation SDK for multi-agent applications, with a tree-structured trace schema (Trace/Span) that maps onto any agent framework — LangGraph, CrewAI, AutoGen, or raw API calls — evaluating tool calls, handoffs, chain-of-thought, and final answers. Traces are scored against user-defined weighted rubrics by a Redis-backed distributed worker pool (BRPOP atomic claiming), with results streamed live to a Next.js dashboard via SSE. Supports Anthropic and OpenAI as judge providers.",
-    impact: "framework-agnostic trace schema · rubric-weighted scoring · Redis BRPOP workers · SSE live progress",
-    tech: ["Python", "FastAPI", "Redis", "PostgreSQL", "Pydantic v2", "Next.js", "Docker"],
-    github: "https://github.com/tonyh1306/aevol",
+      "Built a multi-agent task-execution system on Qwen Cloud (DashScope) where an orchestrator decomposes a request into a dependency DAG and dispatches it across a pool of specialist agents (researcher/coder/writer) running in parallel over a Redis-backed reliable work queue. Every output is gated by a critic before acceptance, with unresolved disagreements escalated to a bounded council + arbiter, and contested role assignments resolved via contract-net bidding instead of static dispatch. Cross-run reputation scores, epsilon-greedy prompt-variant diversity, and a distilled few-shot playbook let the system's behavior improve across runs, not just within one.",
+    impact: "DAG decomposition · contract-net bidding · council/arbiter escalation · cross-run reputation & playbook learning",
+    tech: ["Python", "Qwen Cloud (DashScope)", "Redis", "Pydantic v2", "FastAPI", "uv"],
+    github: "https://github.com/tonyh1306/Instagent",
   },
   {
     title: "OBRE: Accessibility-First Real-Time Vision System",
