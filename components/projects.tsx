@@ -32,15 +32,6 @@ const projects: Project[] = [
     github: "https://github.com/tonyh1306/OBRE-Vision-through-a-screen",
   },
   {
-    title: "DFD: Deepfake Detection via Transfer Learning",
-    subtitle: "Deepfake Detection via Transfer Learning",
-    description:
-      "Binary classifier (real vs. fake) trained on FaceForensics++ using a frozen EfficientNet-B4 backbone with a fine-tuned classification head. Frame extraction pipeline from C23 video sequences, class-balanced sampling for imbalanced splits, and evaluation with ROC-AUC and accuracy on a held-out split.",
-    impact: "EfficientNet-B4 backbone frozen · class-balanced sampler · ROC-AUC + accuracy eval",
-    tech: ["Python", "PyTorch", "timm", "EfficientNet-B4", "FaceForensics++", "scikit-learn"],
-    github: "https://github.com/tonyh1306/dfd",
-  },
-  {
     title: "Depression Prediction from NHANES Survey Data",
     subtitle: "End-to-End Statistical ML Analysis & Published Report",
     description:

@@ -1,4 +1,4 @@
-import { Brain, Shield, Satellite, Globe, ScanFace } from "lucide-react";
+import { Brain, Shield, Satellite, Globe } from "lucide-react";
 
 const interests = [
   {
@@ -15,11 +15,6 @@ const interests = [
     icon: Satellite,
     title: "Remote Sensing & Earth Science ML",
     body: "Applying satellite image segmentation (Landsat, Sentinel, Planet) to earth science classification — where the engineering challenge is ingesting multi-resolution imagery reproducibly.",
-  },
-  {
-    icon: ScanFace,
-    title: "Deepfake Detection & Media Forensics",
-    body: "Transfer learning on FaceForensics++ to classify real vs. synthesized faces — EfficientNet-B4 backbone frozen, head fine-tuned, evaluated on ROC-AUC across held-out manipulation types.",
   },
 ];
 
@@ -41,41 +36,14 @@ export function Research() {
         </div>
 
         {/* Primary current research */}
-        <div className="rounded-xl border border-primary/30 bg-card/80 backdrop-blur-sm p-6 md:p-8 mb-6">
+        <div className="rounded-xl border border-primary/30 bg-card/80 backdrop-blur-sm p-6 md:p-8 mb-10">
           <div className="flex items-start gap-4">
-            <ScanFace className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
+            <Satellite className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
             <div>
               <p className="text-primary font-mono text-xs tracking-wider uppercase mb-2">
-                Current · Media Forensics
+                Current · Earth Science · Jan 2026 – Present
               </p>
               <h3 className="font-serif text-xl md:text-2xl text-white mb-1">
-                Deepfake Detection
-              </h3>
-              <p className="text-white font-serif italic mb-4">
-                Binary classification of real vs. synthesized faces via transfer
-                learning
-              </p>
-              <p className="text-gray-100 leading-relaxed text-sm">
-                Transfer learning on FaceForensics++ using a frozen
-                EfficientNet-B4 backbone with a fine-tuned classification head.
-                Frame extraction pipeline samples C23-compressed videos across
-                four manipulation types (Deepfakes, Face2Face, FaceSwap,
-                NeuralTextures), with class-balanced sampling and evaluation on
-                ROC-AUC and accuracy over a held-out split.
-              </p>
-            </div>
-          </div>
-        </div>
-
-        {/* Secondary research */}
-        <div className="rounded-xl border border-border bg-card/50 backdrop-blur-sm p-6 md:p-8 mb-10">
-          <div className="flex items-start gap-4">
-            <Satellite className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
-            <div>
-              <p className="text-secondary font-mono text-xs tracking-wider uppercase mb-2">
-                Earth Science · Jan 2026 – Present
-              </p>
-              <h3 className="font-serif text-xl text-white mb-1">
                 Remote Sensing of River Deltas
               </h3>
               <p className="text-white font-serif italic mb-4">

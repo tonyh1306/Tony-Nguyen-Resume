@@ -19,7 +19,7 @@ export function Hero() {
             </h1>
             <div className="mt-6 flex items-start gap-4">
               <span className="h-px w-12 shrink-0 bg-secondary mt-4" />
-              <p className="text-white font-serif text-xl md:text-2xl italic min-w-0">
+              <p className="text-white font-serif text-xl md:text-2xl italic min-w-0 break-words">
                 Building systems that think &mdash; at the intersection of distributed infrastructure and AI.
               </p>
             </div>
