@@ -24,7 +24,7 @@ export function About() {
         <div className="grid md:grid-cols-5 gap-12">
           <div className="md:col-span-3 space-y-6 text-gray-100 leading-relaxed">
             <p className="text-lg">
-              I&apos;m a rising junior CS student at <span className="text-primary font-medium">Vassar College</span> and a <span className="text-primary font-medium">Cornell Tech Break Through Tech ML/AI Fellow</span>. My work lives at the boundary between research and engineering.
+              I&apos;m a junior CS student at <span className="text-primary font-medium">Vassar College</span> and a <span className="text-primary font-medium">Cornell Tech Break Through Tech ML/AI Fellow</span>. My work lives at the boundary between research and engineering.
             </p>
             <p>
               I built <span className="text-primary font-medium">Instagent</span>, a multi-agent task-execution society on Qwen Cloud with contract-net bidding and council-based arbitration. As a software engineer at <span className="text-primary font-medium">The de Leeuw Lab</span>, I&apos;m architecting a serverless Firebase backend (Cloud Functions, Firestore, Cloud Storage, Auth) for realtime, multi-tenant data flows. I cut inference cost per run by 79% by redesigning a distributed LangGraph workflow, sped up an agentic jsPsych code-generation service by 67%, and built a CI/CD pipeline with Playwright, BrowserStack, Jest, and OpenSSF Scorecard, so researchers get a tool that is faster, cheaper, and dependable. I also contributed to <span className="text-primary font-medium">jspsych-contrib</span> open-source cognitive science tooling and reduced API latency by 40% during a production engineering internship at FPT.
